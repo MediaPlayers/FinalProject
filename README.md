@@ -4,7 +4,7 @@ Media player final project
 
 # Tentative Schedule
 
-# week 1: April 11 - 18\
+# week 1: April 11 - 18
 "Build sloppy"
 
 # week 2: April 18 - 25
