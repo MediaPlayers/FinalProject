@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>media player notes</title>
+  
+  
+  
+  
+  
+</head>
+
+<body style="padding: 12.5%">
+
+  <img src="https://res.cloudinary.com/eduprojectsil/image/upload/v1523780837/noderelation_voy8eu.png" />
+<br />
+<h2>ListView T </h2>
+<a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ListView.html" target=_blank>ListView docs</a>
+<br />
+<p><b> displays a horizontal or vertical list of items from which the user may select, or with which the user may interact.</b></p>
+<p> This gives us the object that holds the options/songs to be played. It inherits from Region and Control.</p>
+<br />
+<p>
+"Region is the base class for all JavaFX Node-based UI Controls, and all layout containers. It is a resizable Parent node which can be styled from CSS. It can have multiple backgrounds and borders. It is designed to support as much of the CSS3 specification for backgrounds and borders as is relevant to JavaFX. The full specification is available at the W3C.
+Every Region has its layout bounds, which are specified to be (0, 0, width, height). 
+A Region might draw outside these bounds. 
+The content area of a Region is the area which is occupied for the layout of its children. 
+This area is, by default, the same as the layout bounds of the Region, but can be modified by either the properties of a border (either with BorderStrokes or BorderImages), and by padding. 
+The padding can be negative, such that the content area of a Region might extend beyond the layout bounds of the Region, 
+but does not affect the layout bounds.
+</p> 
+
+<br />
+Read more here about Region here: 
+<a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/Region.html">Region docs </a>
+<br />
+Comes from:
+javafx.scene.control.ListView
+
+<h2>Constructors</h2>
+
+Two constructors:
+<br />
+1.	ListView()
+<br />
+2.	ListView(item: Observable List<T>)
+<br />
+<p>
+the "variable: Object" notation is just "variable Is An Object item" or "variable inherits from Object item"
+We will probably be utilizing constructor #2
+</p>
+
+So what we have so far is "ListView holds items that come from an Observable List"
+~~~~
+
+<h2> item: Observable List T </h2>
+
+<a href="https://docs.oracle.com/javase/8/javafx/api/javafx/collections/ObservableList.html">Observable List docs</a>
+
+<b> "A list that allows listeners to track changes when they occur." </b>
+
+<p>
+ObservableList is a tool that lets you do stuff like let users type into an input field and search/filter a list.
+For example, say a user has 1000 songs in a list. The ObservableList object would allow a user to type
+"The Beatles" and the list would become size 1 and display what they were seeking (or an error message if it fails)
+</p>
+<br />
+In a nutshell observableList gives you access to a lot of user control. Our assignment wants us to 
+
+<b> "Click an Observable List Item and make it play and display an image" </b>
+<br />
+Then ultimately we attach the media player controls to that listView in some way and our assignment skeleton
+is more or less done.
+  
+  
+
+</body>
+
+</html>
