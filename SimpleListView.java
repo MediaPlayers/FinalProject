@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* Basic functionality using ListView */ 
+
 package simplelistview;
 
 
@@ -71,6 +68,7 @@ public class SimpleListView extends Application {
 
         System.out.println(songSelected);
         
+        //Songs gets the list of strings in listViewComponent
     }
     /**
      * @param args the command line arguments
