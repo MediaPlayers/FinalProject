@@ -1,11 +1,10 @@
-package mediaplayerproject
-
 /*
 Variable naming convention:
+
 Containers -> positional elements 
 Components -> Functionality elements
-*/
-
+ */
+package layout;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -20,13 +19,19 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
-public class MediaPlayerProject extends Application {
+/**
+ *
+ * @author sheilfer
+ */
+public class Layout extends Application {
     Scene scene;
     BorderPane root = new BorderPane();
     
     HBox mediaControlContainer = new HBox();
     Text bottomTest = new Text("Bottom Container");
+    
+    VBox imgViewContainer = new VBox();
+    Text topLeftTest = new Text("Left Container");
  
     
     VBox listViewContainer = new VBox();
@@ -47,20 +52,27 @@ public class MediaPlayerProject extends Application {
     public void setupContainers(){
         bottomTest.setFill(Color.WHITE);
         topRightTest.setFill(Color.WHITE);
+        topLeftTest.setFill(Color.WHITE);
         
         mediaControlContainer.getChildren().add(bottomTest);
         mediaControlContainer.prefHeightProperty().bind(scene.heightProperty().multiply(0.15));
         
         listViewContainer.getChildren().add(topRightTest);
         listViewContainer.prefWidthProperty().bind(scene.widthProperty().multiply(0.23));
-
+        listViewContainer.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
+        
+        imgViewContainer.getChildren().add(topLeftTest);
+        imgViewContainer.prefWidthProperty().bind(scene.widthProperty().multiply(0.77));
+        imgViewContainer.prefHeightProperty().bind(scene.heightProperty().multiply(0.85));
         
         root.setBottom(mediaControlContainer);
         root.setRight(listViewContainer);
+        root.setLeft(imgViewContainer);
         
         root.setStyle("-fx-background-color: pink;");
         mediaControlContainer.setStyle("-fx-background-color: green;");
         listViewContainer.setStyle("-fx-background-color: blue;");
+        imgViewContainer.setStyle("-fx-background-color: brown;");
     }
 
     /**
