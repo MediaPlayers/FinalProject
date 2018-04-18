@@ -6,6 +6,7 @@ Media player final project
 # week 2: April 18 - 25
 "Build - Repair - Assemble"
 # TODO
+0. Study code / get grasp of project at large
 1. Fix rewind button
 2. Add Fast Forward functionality
 3. Fix time slider
@@ -13,5 +14,5 @@ Media player final project
 5. UI/UX
 
 # week 3: April 25-32
-"Polish"
+"Polish & Enhance"
 
