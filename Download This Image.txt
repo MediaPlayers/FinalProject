@@ -1,0 +1,3 @@
+Name the image "example.jpg" and place it on desktop for now. Not sure if this would return an error for you guys.
+
+https://res.cloudinary.com/eduprojectsil/image/upload/v1524212813/example_a3xvjo.jpg
